@@ -1,14 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Reborn</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<%= yield %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta name="robots" content="all" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content="中国再生资源开发有限公司" />
+      <meta name="description" content="再生资源，" />
+      <%= stylesheet_link_tag :style %>
+      <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js' %>
+     </head>
+    <body>
+        <div class="header">
+            <div class="header-n">
+                <div class="header-m">
+                    <div class="logo"> <a href="/" title="中国再生资源开发有限公司"></a> </div>
+                    <div class="right"> <a href="/big5/">繁體版</a> | <a href="/english/">English</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <script type="text/javascript">
+                function showMenu(flag)
+                {
+                    document.getElementById("menu"+flag).style.display = "block";
+                    document.getElementById("mt"+flag).className = "over";
+                }
+                function hideMenu(flag)
+                {
+                    document.getElementById("menu"+flag).style.display = "none";
+                    document.getElementById("mt"+flag).className = " ";
+                }
+            </script>
+            <ul>
+                <li><a href="/">首　页</a></li>
+                <li id="mt1" onMouseOver="showMenu(1)" onMouseOut="hideMenu(1)"><a href="/about?category_id=2">关于我们</a>
+                    <ol id="menu1">
+                    <a href="/about?category_sort=text&category_id=2">企业介绍</a><a href="/about?category_sort=text&category_id=3">公司领导</a><a href="/about?category_sort=text&category_id=4">组织架构</a><a href="/about?category_sort=text&category_id=5">业务体系</a><a href="/about?category_sort=text&category_id=6">经营理念</a>                    </ol>
+                </li>
+                <li id="mt2" onMouseOver="showMenu(2)" onMouseOut="hideMenu(2)"><a href="/news?category_id=1">公司动态</a>
+                    <ol id="menu2">
+                    <a href="/news?category_sort=text&category_id=1">总公司动态</a><a href="/news?category_sort=text&category_id=7">分子公司动态</a><a href="/news/video.php?category_sort=video&category_id=8">视频新闻</a><a href="/news?category_sort=text&category_id=9">媒体关注</a>                    </ol>
+                </li>
+                <li id="mt3" onMouseOver="showMenu(3)" onMouseOut="hideMenu(3)"><a href="/industrial?category_sort=text&category_id=10">产业园区</a>
+                    <ol id="menu3">
+                    <a href="/industrial?category_sort=text&category_id=10">广东清远华清循环经济园</a><a href="/industrial?category_sort=text&category_id=11">常州再生资源产业基地</a><a href="/industrial?category_sort=text&category_id=12">西南再生资源产业园区</a><a href="/industrial?category_sort=text&category_id=13">山东临沂再生资源基地</a><a href="/industrial?category_sort=text&category_id=14">洛阳再生资源产业基地</a>                    </ol>
+                </li>
+                <li><a href="/policy.php">产业政策</a></li>
+                <li id="mt8" onMouseOver="showMenu(8)" onMouseOut="hideMenu(8)"><a href="/green">资源与环保</a>
+					<ol id="menu8">
+                    	<a href="/green?category_sort=text&category_id=40">废钢</a><a href="/green?category_sort=text&category_id=41">废纸</a><a href="/green?category_sort=text&category_id=42">废塑料</a><a href="/green?category_sort=text&category_id=43">废有色</a><a href="/green?category_sort=text&category_id=44">废家电</a><a href="/green?category_sort=text&category_id=45">废汽车</a><a href="/green?category_sort=text&category_id=46">废弃电子物</a>                    </ol>
+                </li>
+                <li id="mt4" onMouseOver="showMenu(4)" onMouseOut="hideMenu(4)"><a href="/work?category_id=18">党群工作</a>
+                    <ol id="menu4">
+                    <a href="/work?category_sort=text&category_id=18">公司党建</a><a href="/work?category_sort=text&category_id=19">工会工作</a><a href="/work/show.php?category_sort=pic&category_id=20">员工天地</a>                    </ol>
+                </li>
+                <li><a href="/jobs.php">招贤纳士</a></li>
+                <li><a href="/aboutcontac.php">联系我们</a></li>
+                <li class="end"><a href="/link.php">友情链接</a></li>
+            </ul>
+        </div>
 
-</body>
+        <div class="container">
+            <div class="container-n">
+                <div class="container-m">
+                    <div class="container-t">
+                        <div class="container-inner">
+                            <div class="location-nav"> 您的位置：<a href="#">中国再生资源</a><b></b><strong>友情链接</strong> </div>
+                            <div class="banner">
+                                <img src="/images/p_yqlj.jpg" />
+                            </div>
+                            <div class="k-box">
+                                <div class="k-n">
+                                    <div class="k-m">
+                                        <div class="yqlj">
+                                            <ul>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--本页内容结束-->
+                        <!--尾部开始-->
+                        <div class="clear"></div>
+                        <div class="footer">
+                            <dl>
+                                <dt>Copyrght @ 1989-2011 zgzszy.com All Right Reserved</dt>
+                                <dd>版权所有：中国再生资源开发有限公司 京ICP备09064691号</dd>
+                            </dl>
+                        </div>
+                        <!--尾部结束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--框结束-->
+    </body>
 </html>
