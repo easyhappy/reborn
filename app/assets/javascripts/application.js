@@ -13,3 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+function showMenu(flag)
+{
+  document.getElementById("menu"+flag).style.display = "block";
+  document.getElementById("mt"+flag).className = "over";
+}
+function hideMenu(flag)
+{
+  document.getElementById("menu"+flag).style.display = "none";
+  document.getElementById("mt"+flag).className = " ";
+}

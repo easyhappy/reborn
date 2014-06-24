@@ -306,6 +306,6 @@ a:hover{color:#047ac2;text-decoration:underline;}
 
 .a_video{width:150px;height:113px;position:relative;display:inline-block;vertical-align:top;}
 .a_video img{vertical-align:top;width:150px;height:113px;}
-.a_video .playicon{position:absolute;float:left;width:45px;height:45px;cursor:pointer;background:url(/assets/ico_plays.png) no-repeat!important;_FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ico_plays.png',sizingMethod='scale');background:none;top:33px;left:52px;}
-.a_video:hover .playicon{position:absolute;float:left;width:45px;height:45px;cursor:pointer;background:url(/assets/ico_plays_over.png) no-repeat!important;_FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ico_plays_over.png',sizingMethod='scale');background:none;top:33px;left:52px;}
+.a_video .playicon{position:absolute;float:left;width:45px;height:45px;cursor:pointer;background:url(/assets/ico_plays.png) no-repeat!important;_FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/ico_plays.png',sizingMethod='scale');background:none;top:33px;left:52px;}
+.a_video:hover .playicon{position:absolute;float:left;width:45px;height:45px;cursor:pointer;background:url(/assets/ico_plays_over.png) no-repeat!important;_FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/ico_plays_over.png',sizingMethod='scale');background:none;top:33px;left:52px;}
 

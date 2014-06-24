@@ -1,42 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-      <meta name="robots" content="all" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="keywords" content="中国再生资源开发有限公司" />
-      <meta name="description" content="再生资源，" />
-      <%= stylesheet_link_tag :style %>
-      <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js' %>
-     </head>
-    <body>
-        <div class="header">
-            <div class="header-n">
-                <div class="header-m">
-                    <div class="logo"> <a href="/" title="中国再生资源开发有限公司"></a> </div>
-                    <div class="right"> <a href="/big5/">繁體版</a> | <a href="/english/">English</a> </div>
-                </div>
-            </div>
-        </div>
-        <div class="nav">
-            <script type="text/javascript">
-                function showMenu(flag)
-                {
-                    document.getElementById("menu"+flag).style.display = "block";
-                    document.getElementById("mt"+flag).className = "over";
-                }
-                function hideMenu(flag)
-                {
-                    document.getElementById("menu"+flag).style.display = "none";
-                    document.getElementById("mt"+flag).className = " ";
-                }
-            </script>
-            <ul>
-                <li><a href="/">首　页</a></li>
-                <li id="mt1" onMouseOver="showMenu(1)" onMouseOut="hideMenu(1)"><a href="/about?category_id=2">关于我们</a>
-                    <ol id="menu1">
-                    <a href="/about?category_sort=text&category_id=2">企业介绍</a><a href="/about?category_sort=text&category_id=3">公司领导</a><a href="/about?category_sort=text&category_id=4">组织架构</a><a href="/about?category_sort=text&category_id=5">业务体系</a><a href="/about?category_sort=text&category_id=6">经营理念</a>                    </ol>
-                </li>
+<head>
+  <meta name="robots" content="all" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="中国再生资源开发有限公司" />
+  <meta name="description" content="再生资源，" />
+  <%= stylesheet_link_tag :style %>
+  <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js', :application %>
+</head>
+<body>
+  <div class="header">
+    <div class="header-n">
+      <div class="header-m">
+        <div class="logo"> <a href="/" title="中国再生资源开发有限公司"></a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="/">首　页</a></li>
+      <li id="mt1" onMouseOver="showMenu(1)" onMouseOut="hideMenu(1)"><a href="/about?category_id=2">关于我们</a>
+      <ol id="menu1">
+      <a href="/about?category_sort=text&category_id=2">企业介绍</a><a href="/about?category_sort=text&category_id=3">公司领导</a><a href="/about?category_sort=text&category_id=4">组织架构</a><a href="/about?category_sort=text&category_id=5">业务体系</a><a href="/about?category_sort=text&category_id=6">经营理念</a>                    </ol>
+      </li>
                 <li id="mt2" onMouseOver="showMenu(2)" onMouseOut="hideMenu(2)"><a href="/news?category_id=1">公司动态</a>
                     <ol id="menu2">
                     <a href="/news?category_sort=text&category_id=1">总公司动态</a><a href="/news?category_sort=text&category_id=7">分子公司动态</a><a href="/news/video.php?category_sort=video&category_id=8">视频新闻</a><a href="/news?category_sort=text&category_id=9">媒体关注</a>                    </ol>
@@ -67,7 +54,7 @@
                         <div class="container-inner">
                             <div class="location-nav"> 您的位置：<a href="#">中国再生资源</a><b></b><strong>友情链接</strong> </div>
                             <div class="banner">
-                                <img src="/images/p_yqlj.jpg" />
+                                <img src="/assets/p_yqlj.jpg" />
                             </div>
                             <div class="k-box">
                                 <div class="k-n">
