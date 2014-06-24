@@ -12,8 +12,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
 
-    <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= stylesheet_link_tag "bootstrap_and_overrides" %>
+    <%= stylesheet_link_tag "admin", :media => "all" %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
@@ -34,11 +33,10 @@
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-
     <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js', :application %>
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-right" role="navigation">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -46,12 +44,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><%= I18n.t('admin_background') %></a>
-          <div class="navbar navbar-collapse">
+          <div class="navbar navbar-collapse self_navbar">
+            <a class="brand" href="/admin"><%= I18n.t('admin_background') %></a>
             <ul class="nav navbar-inverse" role="navigation">
-              <li><%= link_to "Link1", "/path1",  :class => 'navbar-brand' %></li>
-              <li><%= link_to "Link2", "/path2",  :class => 'navbar-brand'  %></li>
-              <li><%= link_to "Link3", "/path3",  :class => 'navbar-brand'  %></li>
+              <li><%= link_to "Link1", "#",  :class => 'navbar-brand' %></li>
+              <li><%= link_to "Link2", "#",  :class => 'navbar-brand'  %></li>
+              <li><%= link_to "Link3", "#",  :class => 'navbar-brand'  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
