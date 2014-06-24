@@ -2,4 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 zh-CN:
-  company_name: 苏州开泰再生资源有限公司
+  company_name:             苏州开泰再生资源有限公司
+  admin_background:         管理后台
