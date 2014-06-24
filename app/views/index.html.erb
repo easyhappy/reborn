@@ -1,0 +1,26 @@
+<div class="index-flash">
+  <img src="/assets/flash.jpg" />
+</div>
+<div class="index-focus">         
+  <div id="home_pic_show">
+  </div>
+</div>
+
+<script type='text/javascript'>
+  var data = [{src:'/assets/demo_0.jpg',
+              href:'/'},
+            {src:'/assets/demo_1.jpg',
+              href:'/'},
+           ];             
+  $(document).ready(function(){
+    $('#home_pic_show').d_imagechange({
+      data:data,
+      width:350, 
+      height:200,
+      playTime:3000,
+      animateTime:1000,
+      bg:false, title:false, desc:false,bgHeight:25,btnFontSize:10,
+      animateStyle:'o'
+    });
+  });
+</script>

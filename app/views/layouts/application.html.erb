@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta name="robots" content="all" />
@@ -10,48 +9,25 @@
   <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js', :application %>
 </head>
 <body>
-    <div class="header">
-        <div class="header-n">
-            <div class="header-m">
-                <div class="logo"> <a href="/" title="#{I18n.t('company_name')}"></a></div>
+  <%= render '/layouts/logo_part' %>
+  <div class="nav">
+    <%= header_menu %>
+  </div>
+  <div class="container">
+    <div class="container-n">
+      <div class="container-m">
+        <div class="container-t">
+          <div class="container-inner">
+            <div class="location-nav"> 
+              您的位置：<%= render_breadcrumbs %> 
             </div>
+            <%= yield %>
+          </div>
+          <div class="clear"></div>
+          <%= render '/layouts/footer' %>
         </div>
+      </div>
     </div>
-    <div class="nav">
-      <%= header_menu %>
-    </div>
-    <div class="container">
-        <div class="container-n">
-            <div class="container-m">
-                <div class="container-t">
-                    <div class="container-inner">
-                        <div class="location-nav"> 
-                            您的位置：<%= render_breadcrumbs %> 
-                        </div>
-                        <div class="banner">
-                           <img src="/assets/p_yqlj.jpg" />
-                        </div>
-            <div class="k-box">
-                <div class="k-n">
-                    <div class="k-m">
-                        <div class="yqlj">
-                            <ul>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="footer">
-            <dl>
-                <dt>Copyrght @ 1989-2011 zgzszy.com All Right Reserved</dt>
-                <dd>版权所有：中国再生资源开发有限公司 京ICP备09064691号</dd>
-            </dl>
-        </div>
-    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+  </div>
+</body>
 </html>
