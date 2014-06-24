@@ -24,6 +24,10 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  gem 'pry', '0.9.12.2'
+  gem 'pry-nav', '0.2.3'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

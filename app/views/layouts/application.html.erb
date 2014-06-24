@@ -4,33 +4,33 @@
 <head>
   <meta name="robots" content="all" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="中国再生资源开发有限公司" />
+  <meta name="keywords" content="#{I18n.t('company_name')}" />
   <meta name="description" content="再生资源，" />
   <%= stylesheet_link_tag :style %>
   <%= javascript_include_tag :jquery, 'jquery.d.imagechange.min.js', :application %>
 </head>
 <body>
-  <div class="header">
-    <div class="header-n">
-      <div class="header-m">
-        <div class="logo"> <a href="/" title="中国再生资源开发有限公司"></a> </div>
-      </div>
+    <div class="header">
+        <div class="header-n">
+            <div class="header-m">
+                <div class="logo"> <a href="/" title="#{I18n.t('company_name')}"></a></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="nav">
-    <%= header_menu %>
-  </div>
-  <div class="container">
-    <div class="container-n">
-      <div class="container-m">
-        <div class="container-t">
-          <div class="container-inner">
-            <div class="location-nav"> 
-                您的位置：<%= render_breadcrumbs %> 
-            </div>
-            <div class="banner">
-               <img src="/assets/p_yqlj.jpg" />
-            </div>
+    <div class="nav">
+      <%= header_menu %>
+    </div>
+    <div class="container">
+        <div class="container-n">
+            <div class="container-m">
+                <div class="container-t">
+                    <div class="container-inner">
+                        <div class="location-nav"> 
+                            您的位置：<%= render_breadcrumbs %> 
+                        </div>
+                        <div class="banner">
+                           <img src="/assets/p_yqlj.jpg" />
+                        </div>
             <div class="k-box">
                 <div class="k-n">
                     <div class="k-m">
