@@ -47,9 +47,10 @@
           <div class="navbar navbar-collapse self_navbar">
             <a class="brand" href="/admin"><%= I18n.t('admin_background') %></a>
             <ul class="nav navbar-inverse" role="navigation">
-              <li><%= link_to "Link1", "#",  :class => 'navbar-brand' %></li>
-              <li><%= link_to "Link2", "#",  :class => 'navbar-brand'  %></li>
-              <li><%= link_to "Link3", "#",  :class => 'navbar-brand'  %></li>
+              <li class='active'><%= link_to "Link1", "#"%></li>
+              <li><%= link_to "Link2", "#" %></li>
+              <li><%= link_to "Link3", "#"%></li>
+              <li><%= link_to I18n.t("front_page"), '/', :target => "_blank" %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
