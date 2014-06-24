@@ -5,7 +5,8 @@ gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3'
+gem 'mongo'
+gem 'mongoid', github: 'mongoid/mongoid'
 gem 'devise'
 
 gem 'showbuilder', '0.0.16'
