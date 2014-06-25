@@ -13,6 +13,7 @@ gem 'devise',                     '3.2.4'
 
 gem 'showbuilder',                '0.0.16'
 gem 'will_paginate',              '~> 3.0.5'
+gem "slim-rails"
 
 group :assets do
   gem 'sass-rails',               '4.0.1'
