@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'mongo'
 gem 'mongoid', github: 'mongoid/mongoid'
+gem 'mongoid_auto_increment_id'
 gem 'devise'
 
 gem 'showbuilder', '0.0.16'
