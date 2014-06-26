@@ -1,5 +1,5 @@
 Reborn::Application.routes.draw do
-  devise_for :users, controllers: {registrations: "users/registrations"}
+  devise_for :users, controllers: {omniauth_callbacks: "users/omniauth_callbacks", registrations: "users/registrations"}
   # The priority is based upon order of creation:
   # first created -> highest priority.
   root to: 'home#index'

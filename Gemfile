@@ -10,6 +10,7 @@ gem 'mongoid', github: 'mongoid/mongoid'
 gem 'mongoid_auto_increment_id',  '0.6.5'
 
 gem 'devise',                     '3.2.4'
+gem 'omniauth'
 
 gem 'showbuilder',                '0.0.16'
 gem 'will_paginate',              '~> 3.0.5'
