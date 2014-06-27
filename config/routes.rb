@@ -3,7 +3,9 @@ Reborn::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   root to: 'home#index'
-  get :admin,      to: 'base#index'
+  namespace :admin do
+    get '/', to: 'base#index'
+  end
   get :contact_us, to: 'home#contact_us'
   resources :greens, only: [:index, :show]
   # Sample of regular route:
