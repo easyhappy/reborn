@@ -343,6 +343,7 @@ a:hover{color:#047ac2;text-decoration:underline;}
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+
 .submit{
   padding: 6px 12px;
   font-size: 18px;
@@ -354,6 +355,7 @@ a:hover{color:#047ac2;text-decoration:underline;}
   border-color: #285e8e;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#3071a9))
 }
+
 .banner{
   width: 895px;
   height: 215px;
@@ -361,6 +363,7 @@ a:hover{color:#047ac2;text-decoration:underline;}
   background: url(img_bg2.png) no-repeat;
   margin: 0 auto 10px auto;
 }
+
 .breadcrumb li{
   display: inline-block;
 }
@@ -368,9 +371,15 @@ a:hover{color:#047ac2;text-decoration:underline;}
 .breadcrumb{
   display: inline-block;
 }
+
 .address{
   margin-top: 10px;
 }
+
 .company_info{
   padding: 22px;
+}
+
+.nav li.pull_right{
+  float: right;  
 }
