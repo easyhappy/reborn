@@ -3,7 +3,9 @@ Reborn::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   root to: 'home#index'
-  get :admin, to: 'home#admin'
+  get :admin,      to: 'home#admin'
+  get :contact_us, to: 'home#contact_us'
+  resources :greens, only: [:index, :show]
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

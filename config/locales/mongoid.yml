@@ -1,0 +1,8 @@
+zh-CN:
+  mongoid:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken:      邮箱已经注册
