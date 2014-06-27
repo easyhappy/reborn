@@ -16,6 +16,8 @@ gem 'showbuilder',                '0.0.16'
 gem 'will_paginate',              '~> 3.0.5'
 gem "slim-rails"
 
+gem "cancan"
+
 group :assets do
   gem 'sass-rails',               '4.0.1'
   gem "breadcrumbs_on_rails",     '2.3.0'

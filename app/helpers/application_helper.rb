@@ -15,6 +15,11 @@ module ApplicationHelper
         contents << content_tag(:li, :class => :pull_right) do
           link_to '退出', destroy_user_session_path, :method => :delete
         end
+        if current_user.admin?
+          contents << content_tag(:li, :class => :pull_right) do
+            link_to '后台管理', '/admin', :method => :delete
+          end
+        end
       else
         contents << content_tag(:li, :class => :pull_right) do
           link_to '注册', '/users/sign_up'
