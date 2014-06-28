@@ -17,7 +17,7 @@ module ApplicationHelper
         end
         if current_user.admin?
           contents << content_tag(:li, :class => :pull_right) do
-            link_to '后台管理', '/admin', :method => :delete
+            link_to '后台管理', '/admin'
           end
         end
       else

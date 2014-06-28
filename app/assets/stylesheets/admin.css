@@ -5,3 +5,10 @@
 .self_navbar{
   margin-left: 5%;
 }
+.span9{
+  display: inline-block;
+}
+
+.span3{
+  display: inline-block;
+}

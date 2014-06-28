@@ -2,8 +2,15 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 zh-CN:
+  no_record:                没有记录
   company_name:             苏州开泰再生资源有限公司
   admin_background:         管理后台
   front_page:               返回前台页面
   contact_us:               联系我们
   company_address:          公司地址
+  date:
+    formats:
+      default:
+        created_at:         创建时间
+  form_button:
+    save:                   保存

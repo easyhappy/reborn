@@ -1,0 +1,5 @@
+= show_model_form [:admin, @green_type] do |form|
+  .well
+    = form.show_text_input :name
+  div class="form-actions toolbar well"
+    = form.show_form_button :save, :class => 'btn btn-primary'
