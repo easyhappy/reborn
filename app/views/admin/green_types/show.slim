@@ -1,0 +1,10 @@
+= show_header :admin, @green_type
+= show_model_view @green_type do |view|
+  = view.show_text :name
+
+h3
+  = '相关的资源'
+= show_model_table  @green_type.greens do |row|
+  = row.show_text_column :id
+  = row.show_text_column :name
+  = row.show_text_column :created_at

@@ -8,6 +8,9 @@ module ApplicationHelper
         link_to '关于我们'
       end
       contents << content_tag(:li) do
+        link_to '资源与环保', '/greens'
+      end
+      contents << content_tag(:li) do
         link_to '联系我们', '/contact_us'
       end
 

@@ -23,6 +23,16 @@ module ShowHeaderHelper
     show_common_header headers
   end
 
+  def show_header prefix, model
+    model_type = model.class.to_s.underscore
+    model_types = model_type.to_s.pluralize
+    headers = []
+    headers << [I18n.t("header.show_#{model_type}")]
+    headers << [I18n.t("header.edit_#{model_type}"), send("edit_admin_#{model_type}_path", model)]
+    headers << [I18n.t("header.#{model_types}"), send("admin_#{model_types}_path")]
+    show_common_header headers
+  end
+
   private
   def show_common_header headers
     contents_tag :div, :class => :well do |contents|

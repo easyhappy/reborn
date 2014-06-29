@@ -6,6 +6,7 @@ Reborn::Application.routes.draw do
   namespace :admin do
     get '/', to: 'base#index'
     resources :green_types
+    resources :greens
   end
   get :contact_us, to: 'home#contact_us'
   resources :greens, only: [:index, :show]

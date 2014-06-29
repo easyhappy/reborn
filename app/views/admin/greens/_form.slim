@@ -1,0 +1,7 @@
+= show_model_form [:admin, @green] do |form|
+  .well
+    = form.show_text_input :name
+    = form.show_select_input :green_type_id, GreenType.all.map{|green_type| [green_type.name, green_type.id]}
+    = form.show_memo_input :content
+  div class="form-actions toolbar well"
+    = form.show_form_button :save, :class => 'btn btn-primary'

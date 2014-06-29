@@ -3,3 +3,8 @@ zh-CN:
     new_green_type:   新建资源类型
     green_types:      资源类型列表
     edit_green_type:  编辑资源类型
+    show_green_type:  查看资源类型
+
+    new_green:   新建资源文章
+    greens:      资源文章列表
+    edit_green:  编辑资源文章

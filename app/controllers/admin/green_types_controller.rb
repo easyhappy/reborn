@@ -16,6 +16,10 @@ class Admin::GreenTypesController < Admin::BaseController
     end
   end
 
+  def show
+    @green_type = GreenType.where(:_id => params[:id]).first
+  end
+
   def edit
     @green_type = GreenType.where(:_id => params[:id]).first
   end
