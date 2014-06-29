@@ -7,6 +7,7 @@ Reborn::Application.routes.draw do
     get '/', to: 'base#index'
     resources :green_types
     resources :greens
+    resources :company_news
   end
   get :contact_us, to: 'home#contact_us'
   resources :greens, only: [:index, :show]

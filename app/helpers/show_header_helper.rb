@@ -11,7 +11,7 @@ module ShowHeaderHelper
     model_types = model_type.to_s.pluralize
     headers = []
     headers << [I18n.t("header.new_#{model_type}")]
-    headers << [I18n.t("header.#{model_types}"), send("admin_#{model_types}_path")]
+    headers << [I18n.t("header.#{model_types}"), generate_index_path(model_type)]
     show_common_header headers
   end
 
@@ -19,7 +19,7 @@ module ShowHeaderHelper
     model_types = model_type.to_s.pluralize
     headers = []
     headers << [I18n.t("header.edit_#{model_type}")]
-    headers << [I18n.t("header.#{model_types}"), send("admin_#{model_types}_path")]
+    headers << [I18n.t("header.#{model_types}"), generate_index_path(model_type)]
     show_common_header headers
   end
 
@@ -29,7 +29,7 @@ module ShowHeaderHelper
     headers = []
     headers << [I18n.t("header.show_#{model_type}")]
     headers << [I18n.t("header.edit_#{model_type}"), send("edit_admin_#{model_type}_path", model)]
-    headers << [I18n.t("header.#{model_types}"), send("admin_#{model_types}_path")]
+    headers << [I18n.t("header.#{model_types}"), generate_index_path(model_type)]
     show_common_header headers
   end
 
@@ -47,6 +47,15 @@ module ShowHeaderHelper
           end
         end
       end
+    end
+  end
+
+  def generate_index_path model_type
+    model_types = model_type.to_s.pluralize
+    if model_type.to_s == model_types
+      return send("admin_#{model_types}_index_path")
+    else
+      return send("admin_#{model_types}_path")
     end
   end
 end

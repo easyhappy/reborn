@@ -7,11 +7,19 @@ zh-CN:
     delete_button: 删除
 
   green:
-    name: 名称
-    id:   id
+    name:   名称
+    id:     id
     content: 内容
     created_at:  创建时间
     edit_button:     编辑
     delete_button:   删除
     green_type_id:   资源类型
     green_type_name: 资源类型名称
+
+  company_news:
+    name:   名称
+    content: 内容
+    id:     id
+    created_at:   创建时间
+    edit_button:   编辑
+    delete_button: 删除
