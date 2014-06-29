@@ -8,8 +8,12 @@ class Admin::GreenTypesController < Admin::BaseController
   end
 
   def create
-    @green_type = GreenType.create(permit_params)
-    redirect_to admin_green_types_path
+    @green_type = GreenType.new(permit_params)
+    if @green_type.save
+      redirect_to admin_green_types_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -18,11 +22,14 @@ class Admin::GreenTypesController < Admin::BaseController
 
   def update
     @green_type = GreenType.where(:_id => params[:id]).first
-    @green_type.update_attributes(permit_params)
-    redirect_to admin_green_types_path
+    if @green_type.update_attributes(permit_params)
+      redirect_to admin_green_types_path
+    else
+      render :edit
+    end
   end
 
-  def update
+  def destroy
     @green_type = GreenType.where(:_id => params[:id]).first
     @green_type.delete
     redirect_to admin_green_types_path
