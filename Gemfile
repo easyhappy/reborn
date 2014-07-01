@@ -37,3 +37,4 @@ group :development do
   gem 'pry',                      '0.9.12.2'
   gem 'pry-nav',                  '0.2.3'
 end
+gem "unicorn-rails"

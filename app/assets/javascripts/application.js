@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require kindeditor
 //= require twitter/bootstrap
-destroy_user_session_path
 function showMenu(flag)
 {
   document.getElementById("menu"+flag).style.display = "block";
