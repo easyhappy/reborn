@@ -16,3 +16,4 @@
 Gemfile.lock
 .tags
 tags
+Gemfile.local
