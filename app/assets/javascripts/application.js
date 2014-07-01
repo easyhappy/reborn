@@ -22,5 +22,5 @@ function showMenu(flag)
 function hideMenu(flag)
 {
   document.getElementById("menu"+flag).style.display = "none";
-  document.getElementById("mt"+flag).className = " ";
+  document.getElementById("mt"+flag).className = "";
 }
