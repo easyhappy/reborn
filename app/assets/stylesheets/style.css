@@ -380,6 +380,6 @@ a:hover{color:#047ac2;text-decoration:underline;}
   padding: 22px;
 }
 
-.nav li.pull_right{
-  float: right;  
+ul li.pull_right{
+  float: right 
 }

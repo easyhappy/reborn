@@ -1,8 +1,10 @@
 <div class="con-left">
   <div class="left-nav zyyhb-nav">
+    <h2></h2>
+    <ul>
     <%- @green_types.each do |green_type| %>
       <li><a href="/greens?type_id=<%= green_type.id %>"><%= green_type.name %></a></li>
     <% end %>
-  </ul>
+    </ul>
   </div>
 </div>
