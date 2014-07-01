@@ -14,6 +14,22 @@ module Showbuilder
           link_to content, link_path, :method => :delete
         end
       end
+
+      def show_admin_link_column(*methods)
+        return show_header_column(methods) if is_header
+        return unless current_user.super_admin?
+        if model.common_admin?
+          return content_tag(:td) do
+            link_to '取消管理员', admin_user_cancel_path(model), :method => :put, :class => 'btn btn-primary'
+          end
+        end
+        unless model.admin?
+          return content_tag(:td) do
+            link_to '添加管理员', admin_user_add_path(model), :method => :put, :class => 'btn btn-primary'
+          end
+        end
+        content_tag(:td)
+      end
     end
     class ModelFormBuilder
       def show_kindeditor_input(method, options = {})

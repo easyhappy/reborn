@@ -8,7 +8,7 @@ class User
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :name,               type: String, default: ""
-  field :role,               type: Integer, default: 1
+  field :role,               type: Integer, default: 10
   field :encrypted_password, type: String, default: ""
 
   ## Recoverable
@@ -35,8 +35,25 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
+  def user_level
+    return '超级管理员' if super_admin?
+    return '管理员'    if admin?
+    return '非管理员'
+  end
+
+  def set_user_level
+    '设定用户身份'
+  end
+
+  def super_admin?
+    role == 0
+  end
 
   def admin?
-    role == 0
+    role == 0 or role == 1
+  end
+
+  def common_admin?
+    role == 1
   end
 end

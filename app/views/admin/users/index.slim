@@ -1,0 +1,6 @@
+= show_model_table  @users do |row|
+  = row.show_text_column :id
+  = row.show_text_column :name
+  = row.show_text_column :email
+  = row.show_text_column :user_level
+  = row.show_admin_link_column :set_user_level

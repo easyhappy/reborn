@@ -26,3 +26,10 @@ zh-CN:
     edit_button:   编辑
     delete_button: 删除
     show_foreground: 前台页面
+
+  user:
+    id:               id
+    name:             名字
+    email:            邮箱
+    user_level:       用户级别
+    set_user_level:   设定、取消管理员
