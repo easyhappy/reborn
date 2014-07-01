@@ -7,6 +7,7 @@ Reborn::Application.routes.draw do
     get '/', to: 'base#index'
     resources :green_types
     resources :greens
+    resources :messages
     resources :company_news
     resources :users, only: [:index] do
       put :cancel
@@ -16,6 +17,7 @@ Reborn::Application.routes.draw do
   get :contact_us, to: 'home#contact_us'
   resources :greens, only: [:index, :show]
   resources :company_news, only: [:index, :show]
+  resources :messages
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
