@@ -10,6 +10,11 @@
             <%= @green.content.html_safe %>
           </div>
         </div>
+        <div class="source_name"%>
+          <% if @green.source_name.present? %>
+            <h3>转自 <%= @green.source_name %></h3>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

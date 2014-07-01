@@ -13,7 +13,8 @@ gem 'devise',                     '3.2.4'
 gem 'omniauth'
 
 gem 'showbuilder',                '0.0.16'
-gem 'will_paginate',              '~> 3.0.5'
+gem 'will_paginate-bootstrap'
+gem "will_paginate_mongoid"
 gem "slim-rails"
 #富文本编辑
 gem 'rails_kindeditor'

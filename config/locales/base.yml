@@ -14,3 +14,6 @@ zh-CN:
         created_at:         创建时间
   form_button:
     save:                   保存
+  will_paginate:
+    previous_label:         上一页
+    next_label:             下一页

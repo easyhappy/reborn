@@ -18,9 +18,13 @@
               <dt>
                 <%= link_to green.name, green_path(green), :target => :_blank %>
               </dt>
+              <dd>
+                [<%=green.created_at.strftime("%Y-%m-%d") %>]
+              </dd>
             </dl>
           <% end %>
         </div>
+        <%= will_paginate @posts, renderer: BootstrapPagination::Rails%>
       </div>
     </div>
   </div>

@@ -16,6 +16,7 @@ zh-CN:
     green_type_id:   资源类型
     green_type_name: 资源类型名称
     show_foreground: 前台页面
+    source_name:     来源
 
   company_news:
     name:    名称

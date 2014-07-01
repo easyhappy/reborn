@@ -37,6 +37,6 @@ class Admin::GreensController < Admin::BaseController
 
   private
   def permit_params
-    params.require(:green).permit(:name, :content, :green_type_id)
+    params.require(:green).permit(:name, :content, :green_type_id, :source_name)
   end
 end
