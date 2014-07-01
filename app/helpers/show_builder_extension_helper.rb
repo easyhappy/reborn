@@ -15,5 +15,23 @@ module Showbuilder
         end
       end
     end
+    class ModelFormBuilder
+      def show_kindeditor_input(method, options = {})
+        options ||= {}
+        input_options = options[:input] || {}
+
+        self.show_method_shell(method, options) do
+          self.kindeditor(method, input_options)
+        end
+      end
+    end
+    class ShowModelTableRowBuilder
+      private
+      def show_column_link(name, methods)
+        link_option = get_link_option(methods)
+        options = get_methods_option(methods, :link_options)
+        link_to name, link_option, options
+      end
+    end
   end
 end

@@ -14,5 +14,9 @@ module Reborn
     def delete_button
       '删除'
     end
+
+    def show_foreground
+      '到前台看看'
+    end
   end
 end

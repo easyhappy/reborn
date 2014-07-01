@@ -1,13 +1,13 @@
 zh-CN:
   header:
-    new_green_type:   新建资源类型
-    green_types:      资源类型列表
-    edit_green_type:  编辑资源类型
-    show_green_type:  查看资源类型
+    new_green_type:   新建资源与环保类型
+    green_types:      资源类型与环保列表
+    edit_green_type:  编辑资源与环保类型
+    show_green_type:  查看资源与环保类型
 
-    new_green:   新建资源文章
-    greens:      资源文章列表
-    edit_green:  编辑资源文章
+    new_green:        新建资源与环保文章
+    greens:           资源文章与环保列表
+    edit_green:       编辑资源与环保文章
 
     company_news:      公司动态列表
     new_company_news:  新建公司动态

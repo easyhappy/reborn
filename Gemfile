@@ -15,6 +15,8 @@ gem 'omniauth'
 gem 'showbuilder',                '0.0.16'
 gem 'will_paginate',              '~> 3.0.5'
 gem "slim-rails"
+#富文本编辑
+gem 'rails_kindeditor'
 
 gem "cancan"
 

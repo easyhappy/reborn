@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require kindeditor
 //= require twitter/bootstrap
 destroy_user_session_path
 function showMenu(flag)

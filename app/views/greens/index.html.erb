@@ -8,3 +8,20 @@
     </ul>
   </div>
 </div>
+<div class="con-right">
+  <div class="k-r-box">
+    <div class="k-r-n">
+      <div class="k-r-m">
+        <div class="article-list">
+          <% @greens.each do |green| %>
+            <dl>
+              <dt>
+                <%= link_to green.name, green_path(green), :target => :_blank %>
+              </dt>
+            </dl>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
