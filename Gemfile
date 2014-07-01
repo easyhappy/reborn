@@ -1,5 +1,4 @@
-#source 'https://rubygems.org'
-source 'http://ruby.taobao.org'
+eval(File.read(File.dirname(__FILE__) + '/Gemfile.local'), binding) rescue source 'http://rubygems.org'
 
 gem 'rails', '4.0.0'
 
