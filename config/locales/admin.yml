@@ -33,3 +33,7 @@ zh-CN:
     email:            邮箱
     user_level:       用户级别
     set_user_level:   设定、取消管理员
+  message:
+    id:               id
+    email:            用户联系方式
+    content:          留言内容

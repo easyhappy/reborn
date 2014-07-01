@@ -14,6 +14,10 @@ module ApplicationHelper
         link_to '联系我们', '/contact_us'
       end
 
+      contents << content_tag(:li) do
+        link_to '给我们留言', '/messages/new'
+      end
+
       if current_user.present?
         contents << content_tag(:li, :class => :pull_right) do
           link_to '退出', destroy_user_session_path, :method => :delete

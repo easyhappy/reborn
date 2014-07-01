@@ -7,6 +7,7 @@ Reborn::Application.routes.draw do
     get '/', to: 'base#index'
     resources :green_types
     resources :greens
+    resources :messages
     resources :company_news
     resources :users, only: [:index] do
       put :cancel

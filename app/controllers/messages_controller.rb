@@ -1,4 +1,7 @@
 class MessagesController < ApplicationController
+  def index
+  end
+
   def new
     @message = Message.new
   end
@@ -6,7 +9,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(permit_params)
     @message.save
-    redirect_to root_path
+    redirect_to messages_path
   end
 
   private
