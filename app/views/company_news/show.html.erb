@@ -3,17 +3,12 @@
     <div class="k-m">
       <div class="article">
         <div class="title">
-          <h1><%=@green.name %></h1>
+          <h1><%=@company_news.name %></h1>
         </div>
         <div class="main">
           <div id="content-text">
-            <%= @green.content.html_safe %>
+            <%= @company_news.content.html_safe %>
           </div>
-        </div>
-        <div class="source_name"%>
-          <% if @green.source_name.present? %>
-            <h3>转自 <%= @green.source_name %></h3>
-          <% end %>
         </div>
       </div>
     </div>

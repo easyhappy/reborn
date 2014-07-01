@@ -5,3 +5,4 @@
   = row.show_text_column :created_at
   = row.show_text_link_column    :edit_button,    :link => lambda{|model|edit_admin_company_news_path(model)}
   = row.show_delete_link_column    :delete_button,    :link => lambda{|model|admin_company_news_path(model)}
+  = row.show_text_link_column    :show_foreground,    :link => lambda{|model| company_news_path(model)}, :link_options => {:target => :_blank}

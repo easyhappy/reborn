@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    render '/index'
+    @company_news = CompanyNews.limit(10)
   end
 
   def contact_us

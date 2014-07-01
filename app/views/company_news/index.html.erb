@@ -1,0 +1,21 @@
+<div class="con-right">
+  <div class="k-r-box">
+    <div class="k-r-n">
+      <div class="k-r-m">
+        <div class="article-list">
+          <% @company_news.each do |news| %>
+            <dl>
+              <dt>
+                <%= link_to news.name, company_news_path(news), :target => :_blank %>
+              </dt>
+              <dd>
+                [<%=news.created_at.strftime("%Y-%m-%d") %>]
+              </dd>
+            </dl>
+          <% end %>
+        </div>
+        <%= will_paginate @company_news, renderer: BootstrapPagination::Rails%>
+      </div>
+    </div>
+  </div>
+</div>

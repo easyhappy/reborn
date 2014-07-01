@@ -11,6 +11,7 @@ Reborn::Application.routes.draw do
   end
   get :contact_us, to: 'home#contact_us'
   resources :greens, only: [:index, :show]
+  resources :company_news, only: [:index, :show]
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
