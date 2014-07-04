@@ -33,6 +33,24 @@ module ShowHeaderHelper
     show_common_header headers
   end
 
+  def show_custom_header prefix, model, itext_base
+    model_type = model.class.to_s.underscore
+    model_types = model_type.to_s.pluralize
+    headers = []
+    headers << [I18n.t("header.show_#{itext_base}")]
+    headers << [I18n.t("header.edit_#{itext_base}"), send("edit_admin_#{model_type}_path", model)]
+    headers << ['到前台看看', '/brief', {:target => :_blank} ]
+    show_common_header headers
+  end
+
+  def edit_custom_header prefix, model, itext_base
+    model_type = model.class.to_s.underscore
+    model_types = model_type.to_s.pluralize
+    headers = []
+    headers << [I18n.t("header.edit_#{itext_base}")]
+    show_common_header headers
+  end
+
   private
   def show_common_header headers
     contents_tag :div, :class => :well do |contents|
@@ -43,7 +61,8 @@ module ShowHeaderHelper
           end
         else
           contents << content_tag(:span) do
-            link_to header[0], header[1], :class => "btn btn-primary pull-right"
+            options = header.size > 2 ? header[2] : {}
+            link_to header[0], header[1], :class => "btn btn-primary pull-right", **options
           end
         end
       end

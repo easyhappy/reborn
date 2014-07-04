@@ -11,6 +11,9 @@ module ApplicationHelper
         link_to '公司动态', '/company_news'
       end
       contents << content_tag(:li) do
+        link_to '公司简介', '/brief'
+      end
+      contents << content_tag(:li) do
         link_to '联系我们', '/contact_us'
       end
 

@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+unless Company.where(:key => :company_brief).present?
+  Company.create(:key => :company_brief, :value => '苏州开泰再生资源有限公司')
+end
