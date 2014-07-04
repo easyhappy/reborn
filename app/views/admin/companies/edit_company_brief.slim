@@ -1,0 +1,6 @@
+= edit_custom_header :admin, @company, :company_brief
+= show_model_form [:admin, @company], :itext_base => :company_brief do |form|
+  .well
+    = form.show_kindeditor_input :value, :itext_base => :company_brief
+  div class="form-actions toolbar well"
+    = form.show_form_button :save, :class => 'btn btn-primary'

@@ -37,3 +37,5 @@ zh-CN:
     id:               id
     email:            用户联系方式
     content:          留言内容
+  company:
+    value:            内容

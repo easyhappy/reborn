@@ -5,6 +5,7 @@ Reborn::Application.routes.draw do
   root to: 'home#index'
   namespace :admin do
     get '/', to: 'base#index'
+    resources :companies
     resources :green_types
     resources :greens
     resources :messages
@@ -15,6 +16,7 @@ Reborn::Application.routes.draw do
     end
   end
   get :contact_us, to: 'home#contact_us'
+  get :brief,      to: 'home#company_brief'
   resources :greens, only: [:index, :show]
   resources :company_news, only: [:index, :show]
   resources :messages

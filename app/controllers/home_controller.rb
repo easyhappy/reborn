@@ -6,4 +6,8 @@ class HomeController < ApplicationController
   def contact_us
     add_breadcrumb I18n.t("contact_us")
   end
+
+  def company_brief
+    @brief = Company.where(:key => :company_brief).first
+  end
 end
