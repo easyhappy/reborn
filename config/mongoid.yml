@@ -78,7 +78,7 @@ test:
 production:
   sessions:
     default:
-      database: reborn_production
+      database: reborn_development
       hosts:
         - localhost:27017
       options:

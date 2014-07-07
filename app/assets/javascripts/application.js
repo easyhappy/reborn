@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.d.imagechange
 //= require kindeditor
 //= require twitter/bootstrap
+
 function showMenu(flag)
 {
   document.getElementById("menu"+flag).style.display = "block";

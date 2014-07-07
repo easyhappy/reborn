@@ -25,9 +25,9 @@
 </div>
 
 <script type='text/javascript'>
-  var data = [{src:'/assets/demo_0.jpg',
+  var data = [{src: "<%= asset_path('demo_0.jpg') %>",
               href:'/', alt: '苏州开泰再生资源有限公司'},
-            {src:'/assets/demo_1.jpg',
+            {src: "<%= asset_path('demo_1.jpg') %>",
               href:'/'}
            ];             
   $(document).ready(function(){
