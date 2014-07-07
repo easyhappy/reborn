@@ -11,8 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery_ujs
 //= require kindeditor
-//= require bootstrap
+//= require twitter/bootstrap
 function showMenu(flag)
 {
   document.getElementById("menu"+flag).style.display = "block";

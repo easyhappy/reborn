@@ -20,16 +20,13 @@ gem 'rails_kindeditor'
 
 gem "cancan"
 
+gem "twitter-bootstrap-rails",  '2.2.8'
+gem "less-rails" ,              '2.5.0'
 gem "breadcrumbs_on_rails",     '2.3.0'
-group :assets do
-  gem 'sass-rails',               '4.0.1'
-  gem 'coffee-rails',             '4.0.1'
-  gem "therubyracer",             '0.12.1'
-  gem "less-rails" ,              '2.5.0'
-  gem 'jquery-rails',             '3.1.1'
-  gem "twitter-bootstrap-rails",  '2.2.8'
-  gem 'uglifier',                 '>= 1.0.3'
-end
+gem 'jquery-rails',             '3.1.1'
+gem 'sass-rails',               '4.0.1'
+gem 'coffee-rails',             '4.0.1'
+gem 'uglifier',                 '>= 1.0.3'
 
 
 group :development do
@@ -37,3 +34,4 @@ group :development do
   gem 'pry-nav',                  '0.2.3'
 end
 gem "unicorn-rails"
+gem "therubyracer",             '0.12.1'
