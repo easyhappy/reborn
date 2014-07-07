@@ -20,9 +20,9 @@ gem 'rails_kindeditor'
 
 gem "cancan"
 
+gem "breadcrumbs_on_rails",     '2.3.0'
 group :assets do
   gem 'sass-rails',               '4.0.1'
-  gem "breadcrumbs_on_rails",     '2.3.0'
   gem 'coffee-rails',             '4.0.1'
   gem "therubyracer",             '0.12.1'
   gem "less-rails" ,              '2.5.0'
